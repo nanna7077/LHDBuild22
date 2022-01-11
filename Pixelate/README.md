@@ -3,6 +3,8 @@ Allows the user to select an image and pixelation amount with a live preview of 
 
 ![Demo Image](https://github.com/nanna7077/LHDBuild22/blob/main/Pixelate/images/1.png?raw=true)
 
+[View Demonstration Video](https://vimeo.com/664686173)
+
 #### How to run the program:
 #### Linux:
 1. Open a terminal and enter your virtual environment and do
