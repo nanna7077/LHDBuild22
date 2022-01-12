@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+html {
+    background-color: #1d1135;
+    color: #fcfbfe;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.desc {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#mainButton {
+    background-color: #ba1e68;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#mainButton:hover {
+    background-color: #bd417b;
+}
+
+.scoreLabel {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#score {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#gameArea {
+    min-height: 53vh;
+}
+
+.asteroidSprite {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    z-index: 0;
+}
+
+#hero {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    z-index: 0;
+}
+
+#gameEnd {
+    position: absolute;
+    top: 0;
+    padding: 10 10 10 10;
+    width: 99%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #7649fe;
+    display: none;
+}
+
+.bigText {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#finalScore {
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gameEndButton {
+    margin-top: 25px;
+    font-size: 1.7rem;
+    padding: .5% .5% .5% .5%;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+}
+
+.footer {
+    width: 99%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #7649fe;
+}
+
+a {
+    color: #ba1e68;
+}
