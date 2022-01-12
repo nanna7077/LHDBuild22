@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Cat</title>
+    <link rel="stylesheet" href='static/styles/main.css'>
+</head>
+
+<body>
+    <div class='title'>Space Cat</div>
+    <br>
+    <div class='desc'>Guide Space Commander Mr. Cat through the vastness of the space without colliding on asteroids.<br>Press and Hold the control button to make Mr. Cat move forward.</div>
+    <center>
+        <div class="scoreLabel">Score: </div>
+        <div id="score">0</div>
+    </center>
+    <div id="gameArea">
+        <img id="hero" src="static/images/neko.gif">
+    </div>
+    <button id="mainButton">Control Button</button>
+    <div id="gameEnd">
+        <div class="bigText">Oops. You failed in protecting Mr. Cat.</div>
+        <div class="bigText">Your Score is </div>
+        <div id="finalScore">6666</div>
+        <button class="gameEndButton" onclick="window.location.href=window.location.href">Play Again</button>
+        <button class="gameEndButton" onclick="saveScreenShot()">Save Score</button>
+    </div>
+    <footer class="footer">
+        Made with ❤️ by <a href="https://github.com/nanna7077/">Nannan</a>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+<script src="static/js/main.js"></script>
+
+</html>
