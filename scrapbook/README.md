@@ -7,12 +7,13 @@ A Web Scraping Application which fetches you the
   <li><strong>Upcoming MLH Hackathons</strong></li>
   </ul>
   
-# <a href ="">RUN THE SCRAPBOOK NOW!</a>
+## <a href="nanna7077.github.io/lhDBuild22/scrapbook">View</a>
 
  <attach screenshots>
   
-# BUILT WITH
-* HTML AND CSS
+## BUILT WITH
+* HTML
+* CSS
 * Javascript
 * [Bulma](https://bulma.io/)
 
