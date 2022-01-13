@@ -5,6 +5,7 @@ A Web Scrapper which fetches you the
   <li><strong>Trending Github Repos</strong></li>
   <li><strong>Latest Tech News</strong></li>
   <li><strong>Upcoming MLH Hackathons</strong></li>
+  <li><strong>Wallpaper of the day</strong></li>
   </ul>
   
 ## <a href="https://nanna7077.github.io/LHDBuild22/scrapbook/">Go to Scrapbook</a>
