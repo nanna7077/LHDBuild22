@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+    color: #f5f5f5;
+}
+
+.topbarItem {
+    padding-left: 10px;
+}
+
+.logo {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.logoSubText {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tile {
+    border-radius: 8px;
+}
+
+.foo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.left {
+    text-align: left;
+}
+
+.notification {
+    opacity: 0.9;
+}
+
+.card {
+    width: 98%;
+    margin-bottom: 20px;
+}
+
+#news {
+    height: 48vh;
+    overflow-y: scroll;
+}
+
+#trendingRepos {
+    height: 48vh;
+    overflow-y: scroll;
+}
+
+#hackathons {
+    height: 68vh;
+    overflow-y: scroll;
+}
+
+#hackathonsparent {
+    height: 100%;
+}
+
+#newsparent {
+    height: 100%;
+}
+
+#repoparent {
+    height: 100%;
+}
+
+a {
+    color: rgb(48, 141, 218);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}

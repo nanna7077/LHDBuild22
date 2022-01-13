@@ -1,2 +1,76 @@
+<!DOCTYPE html>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href="static/styles/main.css">
+    <title>Scrapbook</title>
+</head>
 
+<body>
+    <nav class="is-fluid" style="display: flex;" role="navigation" aria-label="main navigation">
+        <div class="topbarItem">
+            <div class='logo'>Scrapbook</div>
+            <div class='logoSubText'>Everything. At a glance.</div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical" id="repoparent">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Github Trending Repos</p>
+                            <div id="trendingRepos">
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent" id="newsparent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">News</p>
+                            <div id="news">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">About Us</p>
+                        <p class="subtitle">Contribute to our Github repo!</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent" id="hackathonsparent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">Upcoming Hackathons on MLH</p>
+                        <p class="subtitle">Start Hacking!</p>
+                    </div>
+                    <div class="content" id="hackathons">
+                    </div>
+            </div>
+            </article>
+        </div>
+    </div>
+    </div>
+    <div class="foo">
+        <div class="left">
+            <div id="wallpaperInfo"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="static/js/cookies.js"></script>
+<script src="static/js/setDailyWallpaper.js"></script>
+<script src="static/js/githubTrending.js"></script>
+<script src="static/js/newsScrapper.js"></script>
+<script src="static/js/hackathonsScrapper.js"></script>
+
+</html>
