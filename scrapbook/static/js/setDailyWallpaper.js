@@ -38,6 +38,14 @@ function getRandomWallpaper() {
         Cookie.set("todaysWallpaperLink", wallpaper.path, { days: 1, path: "/" })
         Cookie.set("todaysWallpaperName", wallpaper.name, { days: 1, path: "/" })
         Cookie.set("todaysWallpaperDesc", wallpaper.description, { days: 1, path: "/" })
+        var wallpaperLink = Cookie.get("todaysWallpaperLink");
+        var wallpaperName = Cookie.get("todaysWallpaperName");;
+        var wallpaperDesc = Cookie.get("todaysWallpaperDesc");
+        document.getElementsByTagName("html")[0].style.background = "url('" + wallpaperLink + "')";
+        document.getElementsByTagName("html")[0].style.backgroundSize = 'cover';
+        document.getElementsByTagName("html")[0].style.backgroundPosition = 'center';
+        document.getElementsByTagName("html")[0].style.backgroundRepeat = 'no-repeat';
+        document.getElementById("wallpaperInfo").innerHTML = "<div style='font-weight: bold; font-size: 0.9rem;'><a href='https://wallux-0.github.io/' target='_blank'>" + wallpaperName + " - Wallpaper provided by Wallux</a>";
     })
 }
 
