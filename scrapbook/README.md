@@ -1,6 +1,6 @@
 # SCRAPBOOK
 
-A Web Scraping Application which fetches you the 
+A Web Scrapper which fetches you the 
 <ul>
   <li><strong>Trending Github Repos</strong></li>
   <li><strong>Latest Tech News</strong></li>
