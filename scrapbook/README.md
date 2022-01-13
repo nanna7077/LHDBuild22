@@ -9,7 +9,7 @@ A Web Scraping Application which fetches you the
   
 ## <a href="https://nanna7077.github.io/LHDBuild22/scrapbook/">Go to Scrapbook</a>
 
-![site image](https://github.com/nanna7077/LHDBuild22/blob/main/scrapbook/Scrapbook.png)
+![site image](https://github.com/nanna7077/LHDBuild22/blob/main/scrapbook/preview.png?raw=true)
   
 ## BUILT WITH
 * HTML
