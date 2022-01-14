@@ -12,3 +12,6 @@ Collection of challenges I did for Local Hack Day: Build 2022
 
 ### Day-4:
 1. [Scrapbook](https://github.com/nanna7077/LHDBuild22/tree/main/scrapbook) - A webpage that displays various useful content such as news and upcoming hackathons at single page through web scraping using only HTML, CSS, JS. - [View Here](https://nanna7077.github.io/LHDBuild22/scrapbook/). Front-end designed by [@tharunya07](https://github.com/Tharunya07/)
+
+### Day-5:
+1. [Random Number Generator](https://github.com/nanna7077/LHDBuild22/tree/main/randomNumberGenerator) - A custom random number generator written using Python for the ```Create a Random Number Generator ``` challenge.
