@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Meme</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 98vh;
+        width: 100%;
+    }
+    
+    .card {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(20px) saturate(120%);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        max-width: 50vh;
+        max-height: 60vh;
+        padding: 2% 2% 2% 2%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #meme {
+        width: 40vh;
+        height: 40vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+    
+    #from,
+    #by,
+    #postlink {
+        font-size: 1.1rem;
+    }
+    
+    .footer {
+        color: aliceblue;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="card">
+            <center>
+                <div class="title">Random Meme</div>
+                <img src="" id="meme">
+                <div id="from">r/memes</div>
+                <div id="by">Posted by ndsdf</div>
+                <a id="postlink" href="">Click here to see post on Reddit</a>
+            </center>
+        </div>
+        <div class="footer">
+            Data provided by the <a href="https://github.com/D3vd/Meme_Api">Meme Api</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    function getmeme() {
+        fetch("https://meme-api.herokuapp.com/gimme").then(response => response.json()).then(data => {
+            document.getElementById("meme").src = data.preview.reverse()[0];
+            document.getElementById("from").innerText = "From r/" + data.subreddit;
+            document.getElementById("by").innerText = "Posted by " + data.author;
+            document.getElementById("postlink").href = data.postLink;
+        })
+    }
+
+    function generate() {
+
+        var hexValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e"];
+
+        function populate(a) {
+            for (var i = 0; i < 6; i++) {
+                var x = Math.round(Math.random() * 14);
+                var y = hexValues[x];
+                a += y;
+            }
+            return a;
+        }
+
+        var newColor1 = populate('#');
+        var newColor2 = populate('#');
+        var angle = Math.round(Math.random() * 360);
+
+        var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";
+
+        document.getElementById("container").style.background = gradient;
+
+        getmeme();
+    }
+
+    document.onload = generate();
+</script>
+
+</html>
