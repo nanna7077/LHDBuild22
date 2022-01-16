@@ -15,3 +15,6 @@ Collection of challenges I did for Local Hack Day: Build 2022
 
 ### Day-5:
 1. [Random Number Generator](https://github.com/nanna7077/LHDBuild22/tree/main/randomNumberGenerator) - A custom random number generator written using Python for the ```Create a Random Number Generator ``` challenge.
+
+### Day-6:
+1. [Random Meme](https://github.com/nanna7077/LHDBuild22/tree/main/randomMeme) - A simple webpage that displays a random meme from Reddit, built for the ```Use an API``` challenge. [View Here](https://nanna7077.github.io/LHDBuild22/randomMeme/)
